@@ -1,0 +1,9 @@
+.venv/
+data/*.hdf5
+data/*.log
+__pycache__/
+*.pyc
+.DS_Store
+.pytest_cache/
+*.egg-info/
+site/
