@@ -7,7 +7,8 @@ e-means, warmed up and corrected: 2 to 7% lower k-means loss at the same cost wh
   <a href="https://h-means.github.io/playground.html">Playground</a> ·
   <a href="paper/hmeans.pdf">Technical note (PDF)</a> ·
   <a href="REPORT.md">Report</a> ·
-  <a href="NOTES.md">Lab notes</a>
+  <a href="NOTES.md">Lab notes</a> ·
+  <a href="notebooks/small_datasets.ipynb">Notebook</a>
 </p>
 <p align="center">
   <a href="https://github.com/heldernoid/hmeans/actions/workflows/test.yml"><img src="https://github.com/heldernoid/hmeans/actions/workflows/test.yml/badge.svg" alt="tests"></a>
@@ -72,6 +73,7 @@ EMeans(n_clusters=4096, n_passes=5).fit(X)                     # the faithful e-
 |---|---|
 | `hmeans/` | the library: `estimator.py` (scikit-learn style `HMeans`, `EMeans`), `core_numpy.py`, `hmeans.py` (torch core), `laws.py` (e-means laws), `backend.py`, `baselines.py`, `emeans_ref.py` |
 | `tests/` | pytest suite (numpy and torch) |
+| `notebooks/` | `small_datasets.ipynb`: Lloyd, k-means++, e-means and h-means side by side on iris, wine, digits and the 2-D toy, with Voronoi cells; runs in seconds, no download |
 | `experiments/` | `run.py` (one configuration, one JSON line), `suite.py` (the plans, resumable), `analyze.py` (tables and figures), `export_site_data.py`, `results/*.jsonl` (every logged run) |
 | `paper/` | the technical note, `hmeans.tex` and `hmeans.pdf` (`tectonic hmeans.tex` rebuilds it) |
 | `site/` | the documentation site, its own repository [h-means/h-means.github.io](https://github.com/h-means/h-means.github.io) (Astro 5; `npm run dev` serves it, `npm run sync` refreshes the PDF and the results data from this repository) |
